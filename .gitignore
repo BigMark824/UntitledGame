@@ -1,0 +1,6 @@
+/src/.vs
+/src/Engine/x64
+/src/Game/x64
+/src/Rendering/x64
+/src/Win32Client/x64
+/src/ThirdParty/*

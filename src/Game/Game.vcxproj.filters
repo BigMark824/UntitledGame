@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\GUI">
+      <UniqueIdentifier>{648ba4b3-1232-41af-812a-7b73cc5605e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GUI">
+      <UniqueIdentifier>{d546fa54-d344-4aca-bf83-6fbec7d00c2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GUI\Components">
+      <UniqueIdentifier>{496e1f30-865e-49dc-8493-61ab70860b50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GUI\Components">
+      <UniqueIdentifier>{0c84e2ed-2854-4fcc-bdd1-7a1123ac2bb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Input">
+      <UniqueIdentifier>{70afaf66-71d8-480b-bd0f-60219afdc3ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Input">
+      <UniqueIdentifier>{1215286a-91a6-4d4f-9594-e0675a8d6101}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game">
+      <UniqueIdentifier>{0fea3475-8c6c-4768-88b8-0558795ec866}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GUI\Screens">
+      <UniqueIdentifier>{1078b5d3-d624-4534-a5e8-37cfc450dfb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GUI\Screens">
+      <UniqueIdentifier>{0fb6ca04-d172-4057-b09f-afc217efa1b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game">
+      <UniqueIdentifier>{b53a2a05-2466-48db-b4f2-120c47c007aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entity">
+      <UniqueIdentifier>{4b3d68a3-2e38-4bfb-9b2f-6f556b5f27f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entity\Entities">
+      <UniqueIdentifier>{a0ef059a-65fc-4b7a-bfb0-e73fc5b36271}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entity">
+      <UniqueIdentifier>{9516ef9f-3b95-4dd0-b41a-f08c028b6de7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entity\Entities">
+      <UniqueIdentifier>{2c59cf3a-2100-4004-88b7-9e3cb1fe4546}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FPSCounter.h">
+      <Filter>Header Files\GUI\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI.h">
+      <Filter>Header Files\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="GuiComponent.h">
+      <Filter>Header Files\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="InputHandler.h">
+      <Filter>Header Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomButton.h">
+      <Filter>Header Files\GUI\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="MainMenu.h">
+      <Filter>Header Files\GUI\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="StartGame.h">
+      <Filter>Header Files\GUI\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageBox.h">
+      <Filter>Header Files\GUI\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Screen.h">
+      <Filter>Header Files\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>Header Files\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Header Files\Entity\Entities</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FPSCounter.cpp">
+      <Filter>Source Files\GUI\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="InputHandler.cpp">
+      <Filter>Source Files\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomButton.cpp">
+      <Filter>Source Files\GUI\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="MainMenu.cpp">
+      <Filter>Source Files\GUI\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageBox.cpp">
+      <Filter>Source Files\GUI\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="StartGame.cpp">
+      <Filter>Source Files\GUI\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Source Files\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files\Entity\Entities</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
