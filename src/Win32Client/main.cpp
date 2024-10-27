@@ -23,7 +23,7 @@ int main(void)
             if (camera)
             {
                 BeginMode3D(camera->camera);
-                DrawCube({ 0.0f, 0.0f, 0.0f }, 1.0f, 1.0f, 1.0f, RED);
+               // draw stuff from the game loop here todo aaaaa
                 EndMode3D();
             }
 
