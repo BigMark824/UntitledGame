@@ -5,6 +5,7 @@ namespace Game {
 	{
 		protected:
 			std::string m_strPlayerName;
+			int m_health;
 		public:
 			Player(std::string playerName);
 			~Player();

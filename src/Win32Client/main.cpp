@@ -5,7 +5,6 @@
 #include <Game/InputHandler.h>
 int main(void)
 {
-    Rendering::Renderer renderer;
     Input::InputHandler inputHandler;
     
     InitWindow(1280, 720, "Game");
@@ -17,7 +16,7 @@ int main(void)
     {
         BeginDrawing();
 
-            renderer.ClearScreen();
+            game->renderer->ClearScreen();
             auto camera = game->getActiveCamera();
 
             if (camera)
@@ -27,7 +26,7 @@ int main(void)
                 EndMode3D();
             }
 
-            inputHandler.PollInputs(renderer);
+            inputHandler.PollInputs(*game->renderer);
 
             auto pCurrentScreen = game->GetActiveScreen();
             if (pCurrentScreen)
