@@ -1,5 +1,5 @@
 #pragma once
-#include "RenderJobs.h"
+#include "Renderer.h"
 
 namespace Rendering {
 	class Camera {

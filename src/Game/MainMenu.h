@@ -21,9 +21,9 @@ namespace GUI {
 		GUIComponents::CustomButtonComponent* startButton;
 		GUIComponents::CustomButtonComponent* settingsButton;
 		GUIComponents::CustomButtonComponent* exitButton;
-		Rendering::RenderJobs& renderJob;
+		Rendering::Renderer& renderer;
 	public:
-		MainMenu(Game::Game* m_pGame, Rendering::RenderJobs& renderJob);
+		MainMenu(Game::Game* m_pGame, Rendering::Renderer& renderer);
 		~MainMenu();
 		void Render() override;
 	};

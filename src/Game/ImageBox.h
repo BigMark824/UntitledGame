@@ -1,5 +1,5 @@
 #pragma once
-#include <Rendering/RenderJobs.h>
+#include <Rendering/Renderer.h>
 #include <string>
 #include "GuiComponent.h"
 
@@ -12,6 +12,6 @@ namespace GUIComponents {
         float rotation;
 
         ImageBox(const char* imagePath, Vector2 position, float imageRotation, float imageScale);
-        void Draw(Rendering::RenderJobs& renderJob) override;
+        void Draw(Rendering::Renderer& renderer) override;
     };
 }

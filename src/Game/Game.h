@@ -1,26 +1,27 @@
 #pragma once
 #include <iostream>
 #include "Screen.h"
-#include <Rendering/RenderJobs.h>
+#include <Rendering/Renderer.h>
 #include <Rendering/Camera.h>
+#include <spdlog/spdlog.h>
 namespace GUI { class Screen; }
 namespace Game {
 	class Game {
 	private:
 		Rendering::Camera* m_pCurrentCamera;
 	public:
-		Rendering::RenderJobs& renderJob;
+		Rendering::Renderer* renderer;
 		GUI::Screen* m_pCurrentScreen;
 		bool bShouldQuit;
 		bool bIsGameLoading;
 		bool bIsCameraEnabled;
 	public:
-		Game(Rendering::RenderJobs& renderJob);
+		Game();
 		~Game();
 		bool InitCamera();
 		bool SetScreen(GUI::Screen* pScreen);
 		bool ShouldQuit();
-		GUI::Screen* getActiveScreen() const;
+		GUI::Screen* GetActiveScreen() const;
 		Rendering::Camera* getActiveCamera() const;
 	};
 }

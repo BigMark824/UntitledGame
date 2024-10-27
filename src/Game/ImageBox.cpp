@@ -9,7 +9,7 @@ namespace GUIComponents {
         texture = LoadTextureFromImage(image);
         position = imagePos;
     }
-    void ImageBox::Draw(Rendering::RenderJobs& renderJob) {
+    void ImageBox::Draw(Rendering::Renderer& renderer) {
         DrawTextureEx(texture, position, rotation, scale, WHITE);
     }
 }

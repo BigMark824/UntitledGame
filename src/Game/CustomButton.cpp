@@ -10,7 +10,7 @@ namespace GUIComponents {
         originalHeight = image.height;
         originalWidth = image.width;
     }
-    void CustomButtonComponent::Draw(Rendering::RenderJobs& renderJob) {
+    void CustomButtonComponent::Draw(Rendering::Renderer& renderer) {
         DrawTextureV(texture, position, WHITE);
     }
 

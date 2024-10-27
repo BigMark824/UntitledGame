@@ -8,14 +8,14 @@ namespace GUI {
 	private:
 		Game::Game* m_pGame;
 		bool m_bIsMenuActive = false;
-		Rendering::RenderJobs& renderJob;
+		Rendering::Renderer& renderer;
 
 		std::string m_loadingText;
 		int m_iCenterX;
 		int m_iCenterY;
 
 	public:
-		StartGame(Game::Game* m_pGame, Rendering::RenderJobs& renderJobRef);
+		StartGame(Game::Game* m_pGame, Rendering::Renderer& renderer);
 		~StartGame();
 		void Render() override;
 	};

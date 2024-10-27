@@ -1,11 +1,11 @@
 #include <GUI.h>
-#include <Rendering/RenderJobs.h>
+#include <Rendering/Renderer.h>
 
 namespace GUI {
-    void GUIHandler::RenderComponent(GUIComponent* component, Rendering::RenderJobs& renderJob)
+    void GUIHandler::RenderComponent(GUIComponent* component, Rendering::Renderer& renderer)
     {
         if (component) {
-            component->Draw(renderJob);
+            component->Draw(renderer);
         }
     }
 

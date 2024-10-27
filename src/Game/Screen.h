@@ -1,6 +1,6 @@
 #pragma once
 #include <Game/Game.h>
-#include <Rendering/RenderJobs.h>
+#include <Rendering/Renderer.h>
 namespace GUI {
 	class Screen {
 	public:

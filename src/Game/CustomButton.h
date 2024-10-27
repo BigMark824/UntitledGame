@@ -1,5 +1,5 @@
 #pragma once
-#include <Rendering/RenderJobs.h>
+#include <Rendering/Renderer.h>
 #include <string>
 #include "GuiComponent.h"
 
@@ -14,6 +14,6 @@ namespace GUIComponents {
         bool isPressed(Vector2 mousePos, bool mousePressed);
         bool isHovered(Vector2 mousePos);
         CustomButtonComponent(const char* imagePath, Vector2 position, float scale);
-        void Draw(Rendering::RenderJobs& renderJob) override;
+        void Draw(Rendering::Renderer& renderer) override;
     };
 }

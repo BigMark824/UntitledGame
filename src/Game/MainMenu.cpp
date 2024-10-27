@@ -1,6 +1,6 @@
 #include <MainMenu.h>
 namespace GUI {
-	MainMenu::MainMenu(Game::Game* m_pGame, Rendering::RenderJobs& renderJobRef) : renderJob(renderJobRef), startButton(nullptr), m_pGame(m_pGame)
+	MainMenu::MainMenu(Game::Game* m_pGame, Rendering::Renderer& renderer) : renderer(renderer), startButton(nullptr), m_pGame(m_pGame)
 	{
 		m_bIsMenuActive = !m_bIsMenuActive;
 
@@ -59,7 +59,7 @@ namespace GUI {
 	{
 		if (m_bIsMenuActive) {
 
-			titleIcon->Draw(renderJob);
+			titleIcon->Draw(renderer);
 
 			if (startButton->isHovered(GetMousePosition())) {
 				startButton->texture = startButtonHoverTexture;
@@ -67,7 +67,7 @@ namespace GUI {
 			else {
 				startButton->texture = normalStartTexture;
 			}
-			startButton->Draw(renderJob);
+			startButton->Draw(renderer);
 
 			if (exitButton->isHovered(GetMousePosition())) {
 				exitButton->texture = exitButtonHoverTexture;
@@ -75,11 +75,11 @@ namespace GUI {
 			else {
 				exitButton->texture = normalExitTexture;
 			}
-			exitButton->Draw(renderJob);
+			exitButton->Draw(renderer);
 
 			if (startButton->isPressed(GetMousePosition(), IsMouseButtonReleased(MOUSE_BUTTON_LEFT))) {
 				m_bIsMenuActive = false;
-				m_pGame->SetScreen(new GUI::StartGame(m_pGame, renderJob));
+				m_pGame->SetScreen(new GUI::StartGame(m_pGame, renderer));
 			}
 
 			if (exitButton->isPressed(GetMousePosition(), IsMouseButtonReleased(MOUSE_BUTTON_LEFT))) {

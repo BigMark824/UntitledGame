@@ -5,7 +5,7 @@
 namespace GUI {
     class GUIHandler {
     public:
-        void RenderComponent(GUIComponent* component, Rendering::RenderJobs& renderJob);
+        void RenderComponent(GUIComponent* component, Rendering::Renderer& renderer);
         void DestroyComponent(GUIComponent* component);
     };
 }

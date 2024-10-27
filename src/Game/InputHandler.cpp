@@ -2,10 +2,10 @@
 
 namespace Input {
 	bool isFpsCounterVisible = false;
-	void InputHandler::PollInputs(Rendering::RenderJobs& renderJob)
+	void InputHandler::PollInputs(Rendering::Renderer& renderer)
 	{
 		if (IsKeyDown(KEY_F3)) {
-			guiHandler.RenderComponent(&fpsCounter, renderJob);
+			guiHandler.RenderComponent(&fpsCounter, renderer);
 		}
 	}
 }

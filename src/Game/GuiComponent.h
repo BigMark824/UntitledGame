@@ -1,10 +1,10 @@
 #pragma once
-#include <Rendering/RenderJobs.h> 
+#include <Rendering/Renderer.h> 
 
 namespace GUI {
     class GUIComponent {
     public:
-        virtual void Draw(Rendering::RenderJobs& renderJob) = 0; 
+        virtual void Draw(Rendering::Renderer& renderer) = 0;
         virtual ~GUIComponent() = default;
     };
 }

@@ -1,11 +1,11 @@
 #pragma once
-#include <Rendering/RenderJobs.h>
+#include <Rendering/Renderer.h>
 #include <string>
 #include "GuiComponent.h"
 
 namespace GUIComponents {
     class FPSCounterComponent : public GUI::GUIComponent {
     public:
-        void Draw(Rendering::RenderJobs& renderJob) override; 
+        void Draw(Rendering::Renderer& renderer) override;
     };
 }

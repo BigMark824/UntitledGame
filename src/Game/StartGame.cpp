@@ -1,6 +1,6 @@
 #include <StartGame.h>
 namespace GUI {
-	StartGame::StartGame(Game::Game* m_pGame, Rendering::RenderJobs& renderJobRef) : renderJob(renderJobRef), m_pGame(m_pGame)
+	StartGame::StartGame(Game::Game* m_pGame, Rendering::Renderer& renderer) : renderer(renderer), m_pGame(m_pGame)
 	{
 		bool m_bIsMenuActive = true;
 		m_loadingText = "Loading Game...";
